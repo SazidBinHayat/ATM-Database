@@ -2,6 +2,7 @@ Drop table transac;
 Drop table bank;
 Drop table atm_machine;
 Drop table customer;
+Drop table donation;
 Drop table atm_card;
 create table atm_machine(
     machine_id number(5),
@@ -34,9 +35,15 @@ create table bank(
 create table transac(
     card_id number(10),
     machine_id number(5),
-    amount number(6),
+    transac_amount number(6),
     transac_date date,
     user_balance number(6),
     FOREIGN KEY (card_id) REFERENCES atm_card,
     FOREIGN KEY (machine_id) REFERENCES atm_machine
+);
+create table donation(
+    card_id number(10),
+    donate_amount number(6),
+    donate_date date,
+    FOREIGN KEY (card_id) REFERENCES atm_card
 );
