@@ -1,0 +1,13 @@
+INSERT INTO atm_card(card_id, expiry) VALUES(111122,'29-AUG-2022');
+INSERT INTO atm_card(card_id, expiry) VALUES(111133,'01-JAN-2023');
+INSERT INTO atm_card(card_id, expiry) VALUES(111144,'02-FEB-2022');
+INSERT INTO atm_card(card_id, expiry) VALUES(111155,'03-MAR-2024');
+INSERT INTO atm_card(card_id, expiry) VALUES(111166,'04-APR-2024');
+INSERT INTO atm_card(card_id, expiry) VALUES(111177,'05-AUG-2025');
+INSERT INTO atm_card(card_id, expiry) VALUES(111188,'06-DEC-2022');
+INSERT INTO atm_card(card_id, expiry) VALUES(111199,'17-SEP-2023');
+INSERT INTO atm_card(card_id, expiry) VALUES(222222,'18-MAR-2025');
+INSERT INTO atm_card(card_id, expiry) VALUES(222233,'20-JUN-2020');
+INSERT INTO atm_card(card_id, expiry) VALUES(222244,'29-JUL-2022');
+INSERT INTO atm_card(card_id, expiry) VALUES(222255,'11-OCT-2024');
+INSERT INTO atm_card(card_id, expiry) VALUES(222266,'22-NOV-2023');
