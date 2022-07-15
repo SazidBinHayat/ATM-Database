@@ -15,7 +15,7 @@ create table atm_card(
     PRIMARY KEY (card_id)
 );
 create table customer(
-    acc_no number(10) not null,
+    acc_no number(8) not null,
     user_name varchar(25),
     card_id number(10) not null,
     card_pin number(8),
@@ -25,7 +25,7 @@ create table customer(
 create table bank(
     bank_id number(10) not null,
     bank_branch varchar(10),
-    acc_no number(5) not null,
+    acc_no number(8) not null,
     user_balance number(6),
     machine_id number(5) not null,
     PRIMARY KEY (bank_id),
@@ -37,7 +37,6 @@ create table transac(
     machine_id number(5) not null,
     transac_amount number(6),
     transac_date date,
-    user_balance number(6),
     FOREIGN KEY (card_id) REFERENCES atm_card,
     FOREIGN KEY (machine_id) REFERENCES atm_machine
 );
