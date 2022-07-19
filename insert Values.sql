@@ -23,18 +23,31 @@ INSERT INTO atm_machine(machine_id, machine_area) VALUES(4,'DAKBANGLA');
 INSERT INTO atm_machine(machine_id, machine_area) VALUES(5,'BOYRA');
 INSERT INTO atm_machine(machine_id, machine_area) VALUES(6,'DOULATPUR');
 
+
+--insert into bank
+
+INSERT INTO bank(bank_id, bank_branch ) VALUES(10,'Rupsha');
+INSERT INTO bank(bank_id, bank_branch ) VALUES(20,'Fulbari');
+INSERT INTO bank(bank_id, bank_branch ) VALUES(30,'Doulatpur');
+INSERT INTO bank(bank_id, bank_branch ) VALUES(40,'Ferighat' );
+INSERT INTO bank(bank_id, bank_branch ) VALUES(50,'New Market');
+INSERT INTO bank(bank_id, bank_branch ) VALUES(60,'Khalishpur');
+
 --insert into user
 
-INSERT INTO customer(acc_no,user_name,card_id,card_pin) VALUES(121212,'JOHN', 111122, 11);
-INSERT INTO customer(acc_no,user_name,card_id,card_pin) VALUES(131313,'DAVE', 111133, 22);
-INSERT INTO customer(acc_no,user_name,card_id,card_pin) VALUES(141414,'NICK', 111144, 33);
-INSERT INTO customer(acc_no,user_name,card_id,card_pin) VALUES(151515,'ALEX', 111155, 44);
-INSERT INTO customer(acc_no,user_name,card_id,card_pin) VALUES(161616,'ELI', 111166, 55);
-INSERT INTO customer(acc_no,user_name,card_id,card_pin) VALUES(171717,'JAKE', 111177, 66);
+INSERT INTO customer(acc_no,bank_id,user_name,user_balance,card_id,card_pin) VALUES(121212, 10,'JOHNATHON',100000, 111122, 11);
+INSERT INTO customer(acc_no,bank_id,user_name,user_balance,card_id,card_pin) VALUES(131313, 20,'DAVE',200000, 111133, 22);
+INSERT INTO customer(acc_no,bank_id,user_name,user_balance,card_id,card_pin) VALUES(141414, 30, 'NICK',300000, 111144, 33);
+INSERT INTO customer(acc_no,bank_id,user_name,user_balance,card_id,card_pin) VALUES(151515,50, 'ALEX',400000, 111155, 44);
+INSERT INTO customer(acc_no,bank_id,user_name,user_balance,card_id,card_pin) VALUES(161616, 40,'ELITRA',500000, 111166, 55);
+INSERT INTO customer(acc_no,bank_id,user_name,user_balance,card_id,card_pin) VALUES(171717, 60, 'JAKE',600000, 111177, 66);
+INSERT INTO customer(acc_no,bank_id,user_name,user_balance,card_id,card_pin) VALUES(181818, 10,'TOM',700000,111188, NULL);
 
 --insert into donation
 
 INSERT INTO donation(card_id, donate_date, donate_amount) VALUES(111122,'29-AUG-2022', 100);
+INSERT INTO donation(card_id, donate_date, donate_amount) VALUES(111122,'29-AUG-2022', 80);
+INSERT INTO donation(card_id, donate_date, donate_amount) VALUES(111122,'29-AUG-2022', 10);
 INSERT INTO donation(card_id, donate_date, donate_amount) VALUES(111133,'01-JAN-2023', 200);
 INSERT INTO donation(card_id, donate_date, donate_amount) VALUES(111144,'02-FEB-2022', 200);
 INSERT INTO donation(card_id, donate_date, donate_amount) VALUES(111155,'03-MAR-2024', 50);
@@ -58,12 +71,3 @@ INSERT INTO transac(card_id, machine_id,transac_amount, transac_date) VALUES(222
 INSERT INTO transac(card_id, machine_id,transac_amount, transac_date) VALUES(222233,1,5000,'20-APR-2022');
 INSERT INTO transac(card_id, machine_id,transac_amount, transac_date) VALUES(222233,6,2000,'09-FEB-2022');
 INSERT INTO transac(card_id, machine_id,transac_amount, transac_date) VALUES(111122,6,5000,'29-AUG-2022');
-
---insert into bank
-
-INSERT INTO bank(bank_id, bank_branch ,acc_no, user_balance, machine_id) VALUES(10,'Rupsha' ,121212, 100000, 1);
-INSERT INTO bank(bank_id, bank_branch ,acc_no, user_balance, machine_id) VALUES(20,'Fulbari' ,131313, 200000, 2);
-INSERT INTO bank(bank_id, bank_branch ,acc_no, user_balance, machine_id) VALUES(30,'Doulatpur' ,141414, 300000, 3);
-INSERT INTO bank(bank_id, bank_branch ,acc_no, user_balance, machine_id) VALUES(40,'Ferighat' ,151515, 400000, 4);
-INSERT INTO bank(bank_id, bank_branch ,acc_no, user_balance, machine_id) VALUES(50,'New Market' ,161616, 500000, 5);
-INSERT INTO bank(bank_id, bank_branch ,acc_no, user_balance, machine_id) VALUES(60,'Khalishpur' ,171717, 600000, 6);
