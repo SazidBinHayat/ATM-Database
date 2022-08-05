@@ -11,3 +11,4 @@ INSERT INTO donation(card_id, donate_date, donate_amount) VALUES(222233,'20-JUN-
 INSERT INTO donation(card_id, donate_date, donate_amount) VALUES(222244,'29-JUL-2022', 30);
 INSERT INTO donation(card_id, donate_date, donate_amount) VALUES(222255,'11-OCT-2024', 200);
 INSERT INTO donation(card_id, donate_date, donate_amount) VALUES(222266,'22-NOV-2023', 80);
+INSERT INTO donation(card_id, donate_date, donate_amount) VALUES(222266,'22-NOV-2023', 180);
